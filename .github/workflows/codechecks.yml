@@ -8,7 +8,7 @@ on:
 jobs:
   c-static-analysis:
     name: C static analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
       pull-requests: write
@@ -97,7 +97,7 @@ jobs:
 
   markdown-metadata:
     name: Markdown metadata checks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
@@ -111,7 +111,7 @@ jobs:
 
   linux-build-with-tidy:
     name: Linux build with clang-tidy auto-fixes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
       pull-requests: write
